@@ -14,8 +14,8 @@ export class Servidor{
 
     despertarServidor(){
 
-        this.app.listen(3000,function(){
-            console.log("encendido")
+        this.app.listen(process.env.PORT,function(){
+            console.log(process.env.PORT)
         })
     }
 
