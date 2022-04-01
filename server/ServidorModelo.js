@@ -1,5 +1,6 @@
 //const express = require('express')
 import express from 'express'
+import {rutas} from '../routes/rutas.js'
 
 export class Servidor{
 
@@ -21,13 +22,7 @@ export class Servidor{
 
     enrutarPeticiones(){
 
-        this.app.get('/API/v1/jugadores', function (req, res) {
-            res.send('Hello World')
-        })
-
-        this.app.post('/', function (req, res) {
-            res.send('Hello World')
-        })
+       this.app.use("/",rutas)
 
 
     }
