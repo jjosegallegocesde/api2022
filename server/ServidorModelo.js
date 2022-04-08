@@ -4,8 +4,6 @@ import {rutas} from '../routes/rutas.js'
 
 export class Servidor{
 
-   
-
     constructor(){
 
         this.app = express()
